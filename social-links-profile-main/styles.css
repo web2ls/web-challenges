@@ -68,11 +68,16 @@ h2 {
   color: var(--white-color);
 }
 
+.buttons-group {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 24px;
+}
+
 button {
-  display: block;
   width: 249px;
   height: 45px;
-  margin-top: 16px;
   padding: 12px;
   color: var(--white-color);
   font-size: 14px;
@@ -83,10 +88,6 @@ button {
   border-radius: 12px;
   transition: all 0.3s;
   letter-spacing: 0.5px;
-}
-
-button:first-child {
-  margin-top: 24px;
 }
 
 button:hover {
