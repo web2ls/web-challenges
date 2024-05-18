@@ -6,6 +6,10 @@
   --gray-color: gray;
 }
 
+html {
+  min-width: 320px;
+}
+
 body {
   display: flex;
   justify-content: center;
@@ -17,13 +21,16 @@ body {
   padding: 10px 20px;
   background: var(--gray-color);
   box-sizing: border-box;
-  font-family: "Big Shoulders Display", sans-serif;
+  font-family: "Lexend Deca", sans-serif;
   font-weight: 400;
 }
 
 .row {
-  width: 307px;
-  padding: 50px 45px;
+  width: 305px;
+  display: flex;
+  flex-direction: column;
+  padding: 48px;
+  box-sizing: border-box;
 }
 
 .icon {
@@ -53,7 +60,7 @@ body {
 }
 
 .description {
-  width: 321px;
+  max-width: 230px;
   height: 125px;
   margin-top: 25px;
   font-size: 15px;
@@ -62,6 +69,7 @@ body {
 }
 
 .learn-more-button {
+  width: 145px;
   margin-top: 25px;
   padding: 16px 32px;
   border: none;
@@ -69,6 +77,10 @@ body {
   font-size: 15px;
   background-color: var(--white-color);
   border-radius: 25px;
+}
+
+.learn-more-button:hover {
+  cursor: pointer;
 }
 
 .sedans .learn-more-button {
@@ -88,12 +100,8 @@ body {
     flex-direction: row;
   }
 
-  .row {
-    height: 500px;
-  }
-
   .description {
-    width: 212px;
+    max-width: 210px;
   }
 
   .learn-more-button {
