@@ -37,8 +37,35 @@ body {
   width: 100%;
   min-height: 100vh;
   margin: 0;
-  padding: 0;
+  padding: 0 32px 40px;
   font-family: "Young Serif", serif;
   font-weight: 400;
   font-style: normal;
+  background-color: var(--eggshell-color);
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.hero {
+  height: 170px;
+  margin: 0 -32px;
+}
+
+h1 {
+  margin-top: 40px;
+  font-size: 36px;
+  font-weight: 400;
+  word-break: break-all;
+  color: var(--dark-charcoal-color);
+}
+
+.description {
+  margin-top: 24px;
+  color: var(--wenge-brown-color);
+}
+
+.preparation-time {
+  margin-top: 32px;
+  padding: 24px;
+  background-color: ver(--dark-raspberry-color);
 }
